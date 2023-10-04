@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- https://itchief.ru/javascript/tabs -->
+    <div class="main">
+        <div class="main__headear">
+            <div class="main-header__top">
+                <div class="header-top__wrap">My Weather</div>
+                <form id="myForm"> 
+                    <input type="search" name=text" class="search" placeholder = "Search here!" id="Search">
+                    <input type="submit" name="submit" class="submit" value="Search" id="sub">
+                </form>
+            </div>
+            <nav id="tabNav">
+                <ul class="tabNavList">
+                    <li><a href="#tab1" class="act" id="today">Today</a></li>
+                </ul>
+                <ul class="tabNavList">
+                    <li><a href="#tab2" id="five-day">5-day forecast</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main__body" id="MAIN">
+            <div id="tabsWrap">
+                <div class="tab act" id="tab1">
+                    <div class="body-current__weather">
+                        <div class="body-current-top">
+                            <div>CURRENT WEATHER</div>
+                            <div id="current-text__date"></div>
+                        </div>
+                        <div class="body-current-bottom">
+                            <div class="current-bottom__left">
+                                <div id="bottom-left__icon">
+                                    <img src="" alt="" id="first-top__left">
+                                </div>
+                                <div id="bottom-left__underIcon">edwada</div>
+                            </div>
+                            <div class="current-bottom__center">
+                                <div id="bottom-center__degree">here</div>
+                                <div id="bottom-center__realDeagree">edwada</div>
+                            </div>
+                            <div class="current-bottom__right">
+                                <div id="bottom-center__sunrise">dasd</div>
+                                <div id="bottom-center__sunset">edwada</div>
+                                <div id="bottom-center__duration">edwada</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-hourly">
+                        <div class="body-hourly__top">Hourly</div>
+                        <div class="body-hourly__weather">
+                            <div id="hourly-weather__info">
+                                <div class="weather-info__today">Today</div>
+                                <div class="weather-info__space"></div>
+                                <div class="weather-info__forecast">Forecast</div>
+                                <div class="weather-info__temp">Temp(*C)</div>
+                                <div class="weather-info__realFeal">RealFeel</div>
+                                <div class="weather-info__wind">Wind(km/h)</div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="weather-info__firstToday">Today</div>
+                                <div>
+                                    <img src="" alt="" id="weather-info__firstIcon">
+                                </div>
+                                <div id="weather-info__firstForecast">Forecast</div>
+                                <div id="weather-info__firstTemp">Temp(*C)</div>
+                                <div id="weather-info__firstRealFeal">RealFeel</div>
+                                <div id="weather-info__firstWind">Wind(km/h)</div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="weather-info__secondToday">Today</div>
+                                <div>
+                                    <img src="" alt="" id="weather-info__secondIcon">
+                                </div>
+                                <div id="weather-info__secondForecast">Forecast</div>
+                                <div id="weather-info__secondTemp">Temp(*C)</div>
+                                <div id="weather-info__secondRealFeal">RealFeel</div>
+                                <div id="weather-info__secondWind">Wind(km/h)</div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="weather-info__thirdToday">Today</div>
+                                <div>
+                                    <img src="" alt="" id="weather-info__thirdIcon">
+                                </div>
+                                <div id="weather-info__thirdForecast">Forecast</div>
+                                <div id="weather-info__thirdTemp">Temp(*C)</div>
+                                <div id="weather-info__thirdRealFeal">RealFeel</div>
+                                <div id="weather-info__thirdWind">Wind(km/h)</div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="weather-info__fourthToday">Today</div>
+                                <div>
+                                    <img src="" alt="" id="weather-info__fourthIcon">
+                                </div>
+                                <div id="weather-info__fourthForecast">Forecast</div>
+                                <div id="weather-info__fourthTemp">Temp(*C)</div>
+                                <div id="weather-info__fourthRealFeal">RealFeel</div>
+                                <div id="weather-info__fourthWind">Wind(km/h)</div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="weather-info__fifthToday">Today</div>
+                                <div>
+                                    <img src="" alt="" id="weather-info__fifthIcon">
+                                </div>
+                                <div id="weather-info__fifthForecast">Forecast</div>
+                                <div id="weather-info__fifthTemp">Temp(*C)</div>
+                                <div id="weather-info__fifthRealFeal">RealFeel</div>
+                                <div id="weather-info__fifthWind">Wind(km/h)</div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="weather-info__sixthToday">Today</div>
+                                <div>
+                                    <img src="" alt="" id="weather-info__sixthIcon">
+                                </div>
+                                <div id="weather-info__sixthForecast">Forecast</div>
+                                <div id="weather-info__sixthTemp">Temp(*C)</div>
+                                <div id="weather-info__sixthRealFeal">RealFeel</div>
+                                <div id="weather-info__sixthWind">Wind(km/h)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-nearby">
+                        <div class="body-nearby__top">Famous Places</div>
+                        <div class="body-nearby__cities">
+                            <div class="nearby__famous">
+                                <div id="cities-first__name"></div>
+                                <div class="famous-back">
+                                    <img src="" alt=""  id="cities-first__icon">
+                                </div>
+                                <div id="cities-first__temp"></div>
+                            </div>
+                            <div class="nearby__famous">
+                                <div id="cities-second__name"></div>
+                                <div class="famous-back">
+                                    <img src="" alt="" id="cities-second__icon">
+                                </div>
+                                <div id="cities-second__temp"></div>
+                            </div>
+                            <div class="nearby__famous">
+                                <div id="cities-third__name"></div>
+                                <div class="famous-back">
+                                    <img src="" alt="" id="cities-third__icon">
+                                </div>
+                                <div id="cities-third__temp"></div>
+                            </div>
+                            <div class="nearby__famous">
+                                <div id="cities-fourth__name"></div>
+                                <div class="famous-back">
+                                    <img src="" alt="" id="cities-fourth__icon">
+                                </div>
+                                <div id="cities-fourth__temp"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab2">
+                    <div class="five-day">
+                        <div class="five-day__back" id="first-day__back">
+                            <div id="first-day"></div>
+                            <div id="first-date"></div>
+                            <div>
+                                <img src="" alt="" id="first-icon">
+                            </div>
+                            <div id="first-deg"></div>
+                            <div id="first-feel"></div>
+                        </div>
+                        <div class="five-day__back" id="second-day__back">
+                            <div id="second-day"></div>
+                            <div id="second-date"></div>
+                            <div>
+                                <img src="" alt="" id="second-icon">
+                            </div>
+                            <div id="second-deg"></div>
+                            <div id="second-feel"></div>
+                        </div>
+                        <div class="five-day__back" id="third-day__back">
+                            <div id="third-day"></div>
+                            <div id="third-date"></div>
+                            <div>
+                                <img src="" alt="" id="third-icon">
+                            </div>
+                            <div id="third-deg"></div>
+                            <div id="third-feel"></div>
+                        </div>
+                        <div class="five-day__back" id="fourth-day__back">
+                            <div id="fourth-day"></div>
+                            <div id="fourth-date"></div>
+                            <div>
+                                <img src="" alt="" id="fourth-icon">
+                            </div>
+                            <div id="fourth-deg"></div>
+                            <div id="fourth-feel"></div>
+                        </div>
+                        <div class="five-day__back" id="fifth-day__back">
+                            <div id="fifth-day"></div>
+                            <div id="fifth-date"></div>
+                            <div>
+                                <img src="" alt="" id="fifth-icon">
+                            </div>
+                            <div id="fifth-deg"></div>
+                            <div id="fifth-feel"></div>
+                        </div>
+                    </div>
+                    <div class="body-hourly">
+                        <div class="body-hourly__top">Hourly</div>
+                        <div class="body-hourly__weather">
+                            <div id="hourly-weather__info">
+                                <div class="weather-info__today">Today</div>
+                                <div class="weather-info__space"></div>
+                                <div class="weather-info__forecast">Forecast</div>
+                                <div class="weather-info__temp">Temp(*C)</div>
+                                <div class="weather-info__realFeal">RealFeel</div>
+                                <div class="weather-info__wind">Wind(km/h)</div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="hourly__firstToday"></div>
+                                <div>
+                                    <img src="" alt="" id="hourly__firstIcon">
+                                </div>
+                                <div id="hourly__firstForecast"></div>
+                                <div id="hourly__firstTemp"></div>
+                                <div id="hourly__firstRealFeal"></div>
+                                <div id="hourly__firstWind"></div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="hourly__secondToday"></div>
+                                <div>
+                                    <img src="" alt="" id="hourly__secondIcon">
+                                </div>
+                                <div id="hourly__secondForecast"></div>
+                                <div id="hourly__secondTemp"></div>
+                                <div id="hourly__secondRealFeal"></div>
+                                <div id="hourly__secondWind"></div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="hourly__thirdToday"></div>
+                                <div>
+                                    <img src="" alt="" id="hourly__thirdIcon">
+                                </div>
+                                <div id="hourly__thirdForecast"></div>
+                                <div id="hourly__thirdTemp"></div>
+                                <div id="hourly__thirdRealFeal"></div>
+                                <div id="hourly__thirdWind"></div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="hourly__fourthToday"></div>
+                                <div>
+                                    <img src="" alt="" id="hourly__fourthIcon">
+                                </div>
+                                <div id="hourly__fourthForecast"></div>
+                                <div id="hourly__fourthTemp"></div>
+                                <div id="hourly__fourthRealFeal"></div>
+                                <div id="hourly__fourthWind"></div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="hourly__fifthToday"></div>
+                                <div>
+                                    <img src="" alt="" id="hourly__fifthIcon">
+                                </div>
+                                <div id="hourly__fifthForecast"></div>
+                                <div id="hourly__fifthTemp"></div>
+                                <div id="hourly__fifthRealFeal"></div>
+                                <div id="hourly__fifthWind"></div>
+                            </div>
+                            <div id="hourly-weather__info">
+                                <div id="hourly__sixthToday"></div>
+                                <div>
+                                    <img src="" alt="" id="hourly__sixthIcon">
+                                </div>
+                                <div id="hourly__sixthForecast"></div>
+                                <div id="hourly__sixthTemp"></div>
+                                <div id="hourly__sixthRealFeal"></div>
+                                <div id="hourly__sixthWind"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="error" class="err">
+                <div id="error-number">404</div>
+                <div id="error-text">You picked wrong house fool</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    background-color: rgb(214, 212, 212);
+    padding-bottom: 1.5vh;
+}
+
+.main__headear {
+    display: grid;
+    grid-template-rows: 8vh 6vh;
+    background-color: white;
+}
+
+.main-header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0.5vh 1.5vw ;
+}
+
+.header-top__wrap {
+    font-size: 25px;
+    font-weight: 900;
+    color: rgb(12, 124, 124);
+}
+
+#tabNav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10vw 15vw;
+    background-color: rgb(34, 30, 30);
+}
+
+/* #today {
+    color: white;
+}
+
+#five-day {
+    color: white;
+} */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main__body {
+    margin: 2vh 1.5vw 0vh 1.5vw ;
+    padding-bottom: 2vh;
+}
+
+.body-current__weather {
+    display: grid;
+    grid-template-rows: 5vh 15vh;
+    padding: 2vh 1vw;
+    background-color: white;
+}
+
+.body-current-top {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(12, 124, 124);
+    font-weight: 900;
+}
+
+.body-current-bottom {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    justify-items: center;
+}
+
+.current-bottom__left {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    justify-items: center;
+}
+
+.current-bottom__center {
+    display: grid;
+    grid-template-rows: 75% 25%;
+    justify-items: center;
+}
+
+.current-bottom__right {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+
+.body-hourly {
+    display: grid;
+    grid-template-rows: 6vh;
+    margin: 2vh 0vw 0vh 0vw;
+    padding-bottom: 2vh;
+    background-color: white;
+}
+
+.body-hourly__top {
+    color: rgb(12, 124, 124);
+    font-weight: 900;
+    padding: 2vh 1vw;
+}
+
+.body-hourly__weather {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+}
+
+#hourly-weather__info {
+    display: grid;
+    grid-template-rows: 4vh 8vh 4vh 4vh 4vh 4vh;
+    align-items: center;
+    justify-items: center;
+}
+
+.body-nearby {
+    display: grid;
+    grid-template-rows: 6vh;
+    margin: 2vh 0vw -2vh 0vw;
+    background-color: white;
+}
+
+.body-nearby__top {
+    color: rgb(12, 124, 124);
+    font-weight: 900;
+    padding: 2vh 1vw;
+}
+
+.body-nearby__cities {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6vh 6vh;
+    row-gap: 1vh;
+    column-gap: 3vw;
+}
+
+.nearby__famous {
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    margin: 1vh 1.5vw 1vh 1.5vw;
+    align-items: center;
+    background-color: rgb(245, 243, 243);
+}
+
+.famous-back {
+    background-color: aqua;
+}
+
+#cities-first__icon {
+    width: 21%;
+    height: 21%;
+    margin-left: 3.5vw;
+}
+
+#cities-second__icon {
+    width: 21%;
+    height: 21%;
+    margin-left: 3.5vw
+}
+
+#cities-third__icon {
+    width: 21%;
+    height: 21%;
+    margin-left: 3.5vw
+}
+
+#cities-fourth__icon {
+    width: 21%;
+    height: 21%;
+    margin-left: 3.5vw
+}
+
+#cities-first__temp {
+    margin-left: 3vw
+}
+
+#cities-second__temp {
+    margin-left: 3vw
+}
+
+
+#cities-third__temp {
+    margin-left: 3vw
+}
+
+#cities-fourth__temp {
+    margin-left: 3vw
+}
+
+
+
+/* сверху с justify не смог поэтомуб так вышло */
+
+
+
+
+.five-day {
+    display: grid;
+    margin: 0.5vh 0vw;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0.5vh 0vw;
+    grid-template-rows: 25vh;
+    column-gap: 2vw;
+}
+
+.five-day__back {
+    background-color: white;
+}
+
+.five-back {
+    background-color: aqua;
+}
+
+
+
+.tabNavList li {
+    list-style-type: none;
+}
+.tabNavList li a {
+    background-color: rgb(56, 53, 53);
+    padding: 1.41vh 1vw;
+}
+.tabNavList li a.act {
+    background-color: pink;
+}
+#tabsWrap .tab {
+    display: none;
+}
+#tabsWrap .tab.act {
+    display: block;
+}
+
+
+.five-day__back {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 15% 15% 40% 15% 15%;
+}
+
+
+.e {
+    width: 100vw;
+    height: 30vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 50% 50%;
+    background-color: white;
+}
+
+.err {
+    display: none;
+}
